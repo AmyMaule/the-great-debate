@@ -1,0 +1,20 @@
+# Backend files
+*.pyc
+debates_project/debates_project/__pycache__/*
+db.sqlite3
+
+# dependencies
+/frontend/node_modules
+*/build
+*/node_modules
+
+# databse
+db.sqlite3
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
