@@ -20,9 +20,14 @@ from debates import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(
-        "",
-        views.render_frontend,
-        name="render_frontend"
+    re_path(
+        r'^api/questions/$',
+        views.QuestionsView.as_view({'get': 'list'}),
+        name='questions'
+    ),
+    re_path(
+        r'^api/question/(?P<pk>[A-Za-z0-9\-]+)/$',
+        views.QuestionView.as_view({'get': 'retrieve', 'patch': 'partial_update'}),
+        name='question'
     ),
 ]
