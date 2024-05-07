@@ -3,6 +3,7 @@ import axios from "axios";
 
 import { QuestionType } from '../types';
 
+import Header from './Header';
 import Question from './Question';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <Header />
       <div className="main-content-container">
         <div className="questions-container">
           {questions.map(question => (

@@ -1,0 +1,26 @@
+.header-container {
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.header-title-container {
+  padding-bottom: 2rem;
+}
+
+.header-title-top {
+  display: block;
+  margin-left: 9rem;
+}
+
+.header-title-bottom {
+  display: block;
+  font-size: 3rem;
+  text-align: center
+}
+
+.header-subtitle {
+  text-align: center;
+  padding: 0.25rem;
+}
