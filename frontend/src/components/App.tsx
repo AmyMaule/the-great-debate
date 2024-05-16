@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import axios from "axios";
 
+import { devServer } from '../utilities';
 import { QuestionType } from '../types';
 
 import Header from './Header';
@@ -10,7 +10,7 @@ function App() {
   const [questions, setQuestions] = useState<QuestionType[]>([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/questions/", {
+    devServer.get("/api/questions/", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
