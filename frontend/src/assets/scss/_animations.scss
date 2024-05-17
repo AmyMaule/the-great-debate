@@ -1,0 +1,17 @@
+@keyframes show-vote-count {
+  0%  {
+    transform: translateX(-100%)
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes show-vote-count {
+  0%  {
+    transform: translateX(-100%)
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
