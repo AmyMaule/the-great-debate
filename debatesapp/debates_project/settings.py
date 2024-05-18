@@ -25,8 +25,7 @@ SECRET_KEY = os.environ.get('DEBATES_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG') == 'True'
 
-ALLOWED_HOSTS = ['the-great-debate.onrender.com']
-
+ALLOWED_HOSTS = ['localhost']
 
 # Application definition
 
